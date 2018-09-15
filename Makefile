@@ -15,5 +15,5 @@ const.txt:	const.c
 	./const >const.txt
     
 clean:
-	rm --force snake.o snake snake_dbg snake_dbg.o
+	rm --force snake.o snake snake_dbg snake_dbg.o const const.txt
 	
