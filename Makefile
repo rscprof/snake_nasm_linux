@@ -4,7 +4,7 @@ snake:	snake.o
 snake_dbg:  snake_dbg.o
 	ld -o snake_dbg snake_dbg.o
 	
-snake_dbg.o:	snake.asm
+snake_dbg.o:	snake.asm const.txt
 	nasm -o snake_dbg.o -felf64 -F dwarf -g snake.asm
 
 snake.o:	snake.asm const.txt
